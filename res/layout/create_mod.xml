@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <EditText
+        android:id="@+id/modName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/takePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:ems="10"
+        android:hint="Mod Name"
+        android:inputType="textImeMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/pictureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sendModButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/modName"
+        android:layout_marginTop="25dip"
+        android:text="Mod!"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/compileCodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sendModButton"
+        android:layout_alignBottom="@+id/sendModButton"
+        android:layout_alignParentRight="true"
+        android:text="Compile"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/takePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="     Take Picture     " />
+
+</RelativeLayout>

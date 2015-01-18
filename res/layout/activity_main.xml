@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:text="Take Pic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id:" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:" />
+
+        <TextView
+            android:id="@+id/orientationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orientation:" />
+
+        <TextView
+            android:id="@+id/diameterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diameter:" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scanCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="Top Codes Scanned: " />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prevButton"
+        android:layout_alignBottom="@+id/prevButton"
+        android:layout_alignRight="@+id/button1"
+        android:src="@drawable/rightarrow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:text="Top Code Type: " />
+
+    <Button
+        android:id="@+id/repeatSetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/typeTextView"
+        android:layout_below="@+id/typeTextView"
+        android:layout_marginTop="22dp"
+        android:text="Set Repeat Times"
+        android:visibility="invisible" />
+
+    <!-- <Button
+        android:id="@+id/chooseBlockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:text="Choose Block" /> -->
+
+    <Button
+        android:id="@+id/chooseMobButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rerunButton"
+        android:layout_marginTop="23dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/rerunButton"
+        android:text="Choose Mob to Summon" />
+
+    <Button
+        android:id="@+id/rerunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/scanCount"
+        android:layout_alignTop="@+id/nextButton"
+        android:text="Compile Codes"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repeatSetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/backarrow"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/droneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_above="@+id/rerunButton"
+        android:layout_alignRight="@+id/typeTextView"
+        android:text="Drone Distance" />
+
+    <Button
+        android:id="@+id/functionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/typeTextView"
+        android:layout_alignBottom="@+id/typeTextView"
+        android:layout_alignParentRight="true"
+        android:text="()" />
+
+</RelativeLayout>
